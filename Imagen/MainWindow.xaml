@@ -1,0 +1,22 @@
+﻿<Window x:Class="Imagen.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Imagen"
+        mc:Ignorable="d"
+        Title="Imagen" Height="744.658" Width="1074.932"
+        Icon="./assets/128.ico">
+    <Grid HorizontalAlignment="Left" Width="1065" Background="#FF79AC71">
+        <Image x:Name ="PosterImage" HorizontalAlignment="Left" Height="694" Margin="10,10,0,0" VerticalAlignment="Top" Width="452" Source="episodioVI.jpg"/>
+        <RadioButton x:Name="MaximaRadio" Content="Alta" GroupName="Opacidad" HorizontalAlignment="Left" Margin="680,134,0,0" VerticalAlignment="Top" Height="50" Width="241" Background="{x:Null}" FontWeight="Bold" FontSize="18" IsChecked="True" Checked="MaximaRadio_Checked" />
+        <RadioButton x:Name="MedioRadio" Content="Media" GroupName="Opacidad" HorizontalAlignment="Left" Margin="680,189,0,0" VerticalAlignment="Top" Height="50" Width="241" Background="{x:Null}" FontWeight="Bold" FontSize="18" Checked="MedioRadio_Checked"  />
+        <RadioButton x:Name="BajoRadio" Content="Baja" GroupName="Opacidad" HorizontalAlignment="Left" Margin="680,244,0,0" VerticalAlignment="Top" Height="50" Width="241" Background="{x:Null}" FontWeight="Bold" FontSize="18" Checked="BajoRadio_Checked"   />
+        <TextBlock HorizontalAlignment="Left" Margin="680,72,0,0" TextWrapping="Wrap" Text="Opacidad" VerticalAlignment="Top" Height="57" Width="241" FontSize="36" FontWeight="Bold"/>
+        <RadioButton x:Name="RellenoRadio" GroupName="Ajuste" Content="Relleno (Fill)" HorizontalAlignment="Left" Margin="680,366,0,0" VerticalAlignment="Top" Height="50" Width="241" Background="{x:Null}" FontWeight="Bold" FontSize="18" IsChecked="True" Checked="RellenoRadio_Checked" />
+        <RadioButton x:Name="UniformeRadio" GroupName="Ajuste" Content="Uniforme (Uniform)" HorizontalAlignment="Left" Margin="680,416,0,0" VerticalAlignment="Top" Height="50" Width="241" Background="{x:Null}" FontWeight="Bold" FontSize="18" Checked="UniformeRadio_Checked" />
+        <RadioButton x:Name="RellenoUniformeRadio" GroupName="Ajuste" Content="Relleno Uniforme (UniformToFill)" HorizontalAlignment="Left" Margin="680,466,0,0" VerticalAlignment="Top" Height="50" Width="307" Background="{x:Null}" FontWeight="Bold" FontSize="18" Checked="RellenoUniformeRadio_Checked" />
+        <RadioButton x:Name="Sin_AjusteRadio" GroupName="Ajuste" Content="Sin Ajuste (None)" HorizontalAlignment="Left" Margin="680,516,0,0" VerticalAlignment="Top" Height="50" Width="241" Background="{x:Null}" FontWeight="Bold" FontSize="18" Checked="Sin_AjusteRadio_Checked" />
+        <TextBlock HorizontalAlignment="Left" Margin="680,294,0,0" TextWrapping="Wrap" Text="Ajuste" VerticalAlignment="Top" Height="57" Width="241" FontSize="36" FontWeight="Bold"/>
+    </Grid>
+</Window>
